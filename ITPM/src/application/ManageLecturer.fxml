@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ManageLecturerController">
+   <children>
+      <BorderPane prefHeight="635.0" prefWidth="1038.0">
+         <left>
+            <VBox prefHeight="576.0" prefWidth="291.0" style="-fx-background-color: #9D0191;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="226.0">
+                     <children>
+                        <Text fx:id="dashBoard" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="DASHBOARD" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Separator prefWidth="200.0" style="-fx-background-color: #FD3A69;" />
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="226.0">
+                     <children>
+                        <Text fx:id="addLec" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD LECTURER" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Separator prefWidth="200.0" style="-fx-background-color: #FD3A69;" />
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="226.0">
+                     <children>
+                        <Text fx:id="manageLec" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE LECTURER" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Separator prefWidth="200.0" style="-fx-background-color: #FD3A69;" />
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="226.0">
+                     <children>
+                        <Text fx:id="addSub" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD SUBJECT" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Separator prefWidth="200.0" style="-fx-background-color: #FD3A69;" />
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="226.0">
+                     <children>
+                        <Text fx:id="manageSub" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE SUBJECT" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Separator prefWidth="200.0" style="-fx-background-color: #FD3A69;" />
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="226.0">
+                     <children>
+                        <Text fx:id="daysAndHrs" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="WORKING DAYS AND HOURS" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <Separator prefWidth="200.0" style="-fx-background-color: #FD3A69;" />
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="226.0">
+                     <children>
+                        <Text fx:id="addStdnGrp" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD STUDENT GROUPS" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <Separator prefWidth="200.0" style="-fx-background-color: #FD3A69;" />
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="226.0">
+                     <children>
+                        <Text fx:id="manageStdnGrp" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE STUDENT GROUPS" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <Separator prefWidth="200.0" style="-fx-background-color: #FD3A69;" />
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="226.0">
+                     <children>
+                        <Text fx:id="addTags" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD TAGS" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <Separator prefWidth="200.0" style="-fx-background-color: #FD3A69;" />
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="226.0">
+                     <children>
+                        <Text fx:id="manageTags" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE TAGS" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <Separator prefWidth="200.0" style="-fx-background-color: #FD3A69;" />
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="226.0">
+                     <children>
+                        <Text fx:id="addLocation" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD LOCATION" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <Separator prefWidth="200.0" style="-fx-background-color: #FD3A69;" />
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="226.0">
+                     <children>
+                        <Text fx:id="manageLocation" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE LOCATION" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <Separator prefWidth="200.0" style="-fx-background-color: #FD3A69;" />
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="226.0">
+                     <children>
+                        <Text fx:id="addSession" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD SESSION" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <Separator prefWidth="200.0" style="-fx-background-color: #FD3A69;" />
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="226.0">
+                     <children>
+                        <Text fx:id="manageSession" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE SESSION" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                  </HBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="582.0" prefWidth="719.0" style="-fx-background-color: #FECD1A;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="42.0" prefWidth="547.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="68.0" prefWidth="747.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Text fx:id="manageLecTopic" fill="#120078" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE LECTURER">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <TableView prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+                  <HBox prefHeight="60.0" prefWidth="747.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="lecNameL" text="Lecturer Name">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="inputLecName">
+                                 <HBox.margin>
+                                    <Insets top="20.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="centerL" text="Center">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ComboBox fx:id="selectCenter" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="61.0" prefWidth="747.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="empIdL" text="Employee ID">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="inputEmpID">
+                                 <HBox.margin>
+                                    <Insets top="20.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="buildingL" text="Building">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ComboBox fx:id="selectBuilding" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="747.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="facultyL" text="Faculty">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ComboBox fx:id="selectFaculty" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="levelL" text="Level">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ComboBox fx:id="selectLevel" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="61.0" prefWidth="747.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="deptL" text="Department">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ComboBox fx:id="selectDept" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="rankL" text="Rank">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="inputRank">
+                                 <HBox.margin>
+                                    <Insets top="20.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="747.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="35.0" prefWidth="295.0">
+                           <children>
+                              <Label fx:id="lecHrsL" text="Active Hourse of Lecturers">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <CheckBox fx:id="monday" mnemonicParsing="false" text="M" />
+                              <CheckBox fx:id="tuesday" mnemonicParsing="false" text="T" />
+                              <CheckBox fx:id="wednesday" mnemonicParsing="false" text="W" />
+                              <CheckBox fx:id="thursday" mnemonicParsing="false" text="T" />
+                              <CheckBox fx:id="friday" mnemonicParsing="false" text="F" />
+                              <CheckBox fx:id="saturday" mnemonicParsing="false" text="S" />
+                              <CheckBox fx:id="sunday" mnemonicParsing="false" text="S" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="inputLechrs" prefHeight="26.0" prefWidth="76.0">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </TextField>
+                              <RadioButton fx:id="am" mnemonicParsing="false" prefHeight="18.0" prefWidth="43.0" text="AM" />
+                              <RadioButton fx:id="pm" mnemonicParsing="false" text="PM" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="74.0" prefWidth="747.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="74.0" prefWidth="304.0">
+                           <children>
+                              <Button fx:id="updateBtn" mnemonicParsing="false" onAction="#btnUpdate" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #120078;" text="Update" textFill="#fecd1a">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#BtnDelete" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #120078;" text="Delete" textFill="#fecd1a">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="74.0" prefWidth="203.0">
+                           <children>
+                              <Button fx:id="clearbtn" mnemonicParsing="false" onAction="#clearBtn" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #120078;" text="Clear" textFill="#fecd1a">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <HBox fx:id="headerBar" prefHeight="60.0" prefWidth="846.0" style="-fx-background-color: #120078;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="companyLogo" fitHeight="61.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/Y3S1%20ITPM%20project/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="searchBtn" mnemonicParsing="false" onAction="#btnSearch" style="-fx-background-color: #FD3A69;" text="Search" textFill="#050505">
+                                 <HBox.margin>
+                                    <Insets top="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <TextField fx:id="seachBox">
+                           <HBox.margin>
+                              <Insets right="25.0" top="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
